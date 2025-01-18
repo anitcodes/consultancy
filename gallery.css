@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.container .box{
+    width: 100%;
+    margin-bottom: 10px; 
+    break-inside: avoid;
+}
+
+.container .box img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+.container{
+    max-width: calc(100% - 40px);
+    columns: 3;
+}  
+}
+
+@media (max-width: 768px) {
+.container{
+    columns: 2;
+}  
+}
+
+@media (max-width: 400px) {
+    .container{
+        columns: 1;
+    }  
+    }
